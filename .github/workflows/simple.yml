@@ -19,3 +19,11 @@ jobs:
           print(platform.processor())
           print(sys.version)
         shell: python
+  run-windows-cmd:
+    runs-on: windows-latest
+    steps:
+      - name: current dir in ps
+        run: Get-Location
+      - name: current dir in bash
+        run: pwd
+        shell: bash
