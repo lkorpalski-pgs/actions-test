@@ -1,0 +1,17 @@
+name: Hello World
+author: CK
+description: just nothing
+
+inputs:
+  who-to-greet:
+    description: 'Who to greet'
+    required: true
+    default: CK
+
+outputs:
+  time:
+    description: 'When it happened'
+
+runs:
+  using: node12
+  main: dist/index.js
